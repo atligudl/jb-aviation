@@ -10,10 +10,11 @@ const Default = css`
 	height: 4.6rem;
 	padding: 0 2rem;
 	align-items: center;
-	font-weight: 500;
+	font-size: 1.6rem;
+	font-family: ${theme.fonts.fontFamilyCondensed};
 	outline: none;
 	border: 1px solid ${theme.colors.borderColor};
-	border-radius: 6px;
+	border-radius: 2px;
 	background-color: #fff;
 	cursor: pointer;
 	transition-property: color, background, border, border-color, transform, opacity;

@@ -4,7 +4,7 @@ const theme = {
 	fonts: {
 		fontFamily: 'Roboto, sans-serif',
 		fontFamilyCondensed: 'Roboto Condensed, Roboto, sans-serif',
-		fontSize: '1.4rem'
+		fontSize: '1.6rem'
 	},
 	spacing: '3rem',
 	colors: {
@@ -14,7 +14,7 @@ const theme = {
 		secondary: '#1068D1',
 		secondaryDark: darken(0.05, '#1068D1'),
 		grayLight: '#eef2f8',
-		gray: '#99a8c3',
+		gray: '#999',
 		grayDark: '#768196',
 		green: '#69e6a5',
 		greenDark: darken(0.05, '#69e6a5'),
@@ -27,7 +27,9 @@ const theme = {
 	sizes: {
 		sidebarWidth: 64,
 		headerHeightCondensed: '6rem',
-		headerHeight: '7rem'
+		headerHeight: '7rem',
+		pageMaxWidth: '1430px',
+		containerBreakpoint: '1580px'
 	}
 };
 

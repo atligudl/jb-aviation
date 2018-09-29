@@ -5,24 +5,21 @@ import {
 	Hero,
 	HeroBox,
 	H1,
-	Fieldset
+	Fieldset,
 } from '../base';
-import image from '../assets/images/B777-cropped.jpeg';
-import ShowcaseSection from '../showcaseSection/showcaseSection';
-import engine from '../assets/images/engine.jpg';
-import tail from '../assets/images/tail.jpeg';
+import image from '../assets/images/plane.jpeg';
 
-const Frontpage = () => {
+const Services = () => {
 	return (
 		<div>
 			<HeroWrapper>
 				<Hero image={image} paddingTop="40%" />
 				<HeroBox>
 					<H1 marginBottom="3rem">
-						Bringing solutions to aviation
+						Services
 					</H1>
 					<div>
-						We are a team of professionals, including Aircraft Surveyors, Document Auditors, Aviation
+						We offer a wide array of services, including Aircraft Surveyors, Document Auditors, Aviation
 						Business Management specialist with extensive hands-on experience in Aviation.
 					</div>
 					<Fieldset>
@@ -31,10 +28,8 @@ const Frontpage = () => {
 					</Fieldset>
 				</HeroBox>
 			</HeroWrapper>
-			<ShowcaseSection image={tail} imageSide="left" />
-			<ShowcaseSection image={engine} imageSide="right" />
 		</div>
 	);
 };
 
-export default Frontpage;
+export default Services;

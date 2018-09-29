@@ -30,6 +30,10 @@ const globalTheme = `
 		max-height: 100%;
 		max-width: 100%;
 	}
+
+	a {
+		text-decoration: none;
+	}
 `;
 
 export default globalTheme;

@@ -12,7 +12,7 @@ import Button from './buttons/button';
 import StrippedButton from './buttons/strippedButton';
 import Inner from './sizers/inner';
 import Fieldset from './sizers/fieldset';
-import { Columns, Column } from './grid/grid';
+import { Container, Columns, Column } from './grid/grid';
 import { H1, H2, H3, H4, H5, H6 } from './headings/headings';
 import ApplicationWrapper from './wrappers/applicationWrapper';
 import ContentWrapper from './wrappers/contentWrapper';
@@ -39,6 +39,7 @@ export {
 	CheckBox,
 	Button,
 	StrippedButton,
+	Container,
 	Columns,
 	Column,
 	Inner,

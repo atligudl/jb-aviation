@@ -3,7 +3,7 @@ import styled from 'react-emotion';
 import { Link } from 'react-router-dom';
 import { Flex } from '@rebass/grid/emotion';
 
-import { H5, Anchor } from '../base';
+import { Anchor } from '../base';
 import logo from '../logo.svg';
 
 const StyledHeader = styled('header')`
