@@ -2,8 +2,9 @@ import styled from 'react-emotion';
 
 const H1 = styled('h1')`
 	font-weight: 600;
-	font-size: 2rem;
-	line-height: 1.6;
+	font-size: 4rem;
+	line-height: 1.2;
+	font-family: ${props => props.theme.fonts.fontFamilyCondensed};
 	margin: 0;
 	margin-bottom: ${props => (props.marginBottom ? props.marginBottom : '')};
 	color: ${props => props.theme.colors.textColor};
@@ -11,8 +12,9 @@ const H1 = styled('h1')`
 
 const H2 = styled('h2')`
 	font-weight: 600;
-	font-size: 1.8rem;
-	line-height: 1.6;
+	font-size: 3.5rem;
+	line-height: 1.2;
+	font-family: ${props => props.theme.fonts.fontFamilyCondensed};
 	margin: 0;
 	margin-bottom: ${props => (props.marginBottom ? props.marginBottom : '')};
 	color: ${props => props.theme.colors.textColor};
@@ -20,8 +22,9 @@ const H2 = styled('h2')`
 
 const H3 = styled('h3')`
 	font-weight: 600;
-	font-size: 1.6rem;
-	line-height: 1.6;
+	font-size: 3rem;
+	line-height: 1.2;
+	font-family: ${props => props.theme.fonts.fontFamilyCondensed};
 	margin: 0;
 	margin-bottom: ${props => (props.marginBottom ? props.marginBottom : '')};
 	color: ${props => props.theme.colors.textColor};
@@ -29,7 +32,7 @@ const H3 = styled('h3')`
 
 const H4 = styled('h4')`
 	font-weight: 600;
-	font-size: 1.4rem;
+	font-size: 2.5rem;
 	line-height: 1.6;
 	margin: 0;
 	margin-bottom: ${props => (props.marginBottom ? props.marginBottom : '')};
@@ -38,7 +41,7 @@ const H4 = styled('h4')`
 
 const H5 = styled('h5')`
 	font-weight: 600;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	line-height: 1.6;
 	margin: 0;
 	margin-bottom: ${props => (props.marginBottom ? props.marginBottom : '')};

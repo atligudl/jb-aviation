@@ -19,7 +19,7 @@ const globalTheme = `
 	}
 
 	body {
-		padding-top: 7.7rem;
+		padding-top: ${theme.sizes.headerHeight};
 		margin: 0;
 		font-size: ${theme.fonts.fontSize};
 		line-height: 1.6;

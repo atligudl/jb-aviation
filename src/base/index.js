@@ -21,10 +21,12 @@ import Spinner from './loaders/spinner';
 import LoadingBar from './loaders/loadingBar';
 import ScrollableContainer from './containers/scrollableContainer';
 import { StripedTable, StripedTableItem } from './tables/stripedTable';
-import Hero from './hero/hero';
+import { HeroWrapper, Hero, HeroBox } from './hero/hero';
 
 export {
+	HeroWrapper,
 	Hero,
+	HeroBox,
 	Anchor,
 	RoundHoverableIcon,
 	Input,

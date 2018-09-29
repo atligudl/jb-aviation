@@ -1,11 +1,15 @@
-import styled from 'react-emotion';
+import { css } from 'emotion';
 
-const Anchor = styled('a')`
+import theme from '../app/theme';
+
+const Anchor = css`
 	cursor: pointer;
-	color: ${props => (props.theme.colors.primary)};
+	color: ${theme.colors.primary};
+	text-decoration: none;
+
 	&:hover {
 		text-decoration: none;
-		color: ${props => (props.theme.colors.primaryDark)};
+		color: ${theme.colors.primaryDark};
 	}
 `;
 
