@@ -31,8 +31,8 @@ const Frontpage = () => {
 					</Fieldset>
 				</HeroBox>
 			</HeroWrapper>
-			<ShowcaseSection image={tail} imageSide="left" />
-			<ShowcaseSection image={engine} imageSide="right" />
+			<ShowcaseSection image={tail} imageSide="left" url="/services" />
+			<ShowcaseSection image={engine} imageSide="right" url="/about-us" />
 		</div>
 	);
 };

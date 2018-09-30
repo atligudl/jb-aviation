@@ -6,6 +6,7 @@ import { ThemeProvider } from 'emotion-theming';
 import theme from './base/app/theme';
 import globalTheme from './base/app/global';
 import App from './app';
+import ScrollToTop from './scrollToTop/scrollToTop';
 import registerServiceWorker from './registerServiceWorker';
 
 injectGlobal(globalTheme);
@@ -13,7 +14,9 @@ injectGlobal(globalTheme);
 ReactDOM.render((
 	<ThemeProvider theme={theme}>
 		<BrowserRouter>
-			<App />
+			<ScrollToTop>
+				<App />
+			</ScrollToTop>
 		</BrowserRouter>
 	</ThemeProvider>
 ), document.getElementById('root'));

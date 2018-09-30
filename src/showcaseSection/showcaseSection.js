@@ -43,7 +43,7 @@ const ButtonWrapper = styled('div')`
 	margin-top: 3rem;
 `;
 
-const ShowcaseSection = ({ image, imageSide }) => {
+const ShowcaseSection = ({ image, imageSide, url }) => {
 	return (
 		<StyledShowcaseSection>
 			<Container>
@@ -58,7 +58,7 @@ const ShowcaseSection = ({ image, imageSide }) => {
 								on-site representation, On time delivery is our goal.
 							</Text>
 							<ButtonWrapper>
-								<Link to="/">
+								<Link to={url}>
 									<Button primary="true">Read more</Button>
 								</Link>
 							</ButtonWrapper>
