@@ -7,6 +7,7 @@ import Header from './header/header';
 import Frontpage from './frontpage/frontpage';
 import Services from './services/services';
 import AboutUs from './aboutUs/aboutUs';
+import Footer from './footer/footer';
 
 const Wrapper = styled('div')`
 	.fade-enter {
@@ -39,21 +40,22 @@ class App extends Component {
 			<div className="App">
 				<Header />
 				<Wrapper>
-				<TransitionGroup className="transition-group">
-					<CSSTransition
-						key={this.props.location.key}
-						timeout={{ enter: 300, exit: 300 }}
-						classNames="fade">
-						<section className="route-section">
-							<Switch location={this.props.location}>
-								<Route exact path="/" component={Frontpage} />
-								<Route exact path="/services" component={Services} />
-								<Route exact path="/about-us" component={AboutUs} />
-							</Switch>
-						</section>
-					</CSSTransition>
-				</TransitionGroup>
+					<TransitionGroup className="transition-group">
+						<CSSTransition
+							key={this.props.location.key}
+							timeout={{ enter: 300, exit: 300 }}
+							classNames="fade">
+							<section className="route-section">
+								<Switch location={this.props.location}>
+									<Route exact path="/" component={Frontpage} />
+									<Route exact path="/services" component={Services} />
+									<Route exact path="/about-us" component={AboutUs} />
+								</Switch>
+							</section>
+						</CSSTransition>
+					</TransitionGroup>
 				</Wrapper>
+				<Footer />
 			</div>
 		);
 	}
