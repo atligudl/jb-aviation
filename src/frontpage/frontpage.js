@@ -4,7 +4,7 @@ import {
 	HeroWrapper,
 	Hero,
 	HeroBox,
-	H1,
+	H2,
 	Fieldset
 } from '../base';
 import image from '../assets/images/B777-cropped.jpeg';
@@ -18,16 +18,18 @@ const Frontpage = () => {
 			<HeroWrapper>
 				<Hero image={image} paddingTop="40%" />
 				<HeroBox>
-					<H1 marginBottom="3rem">
-						Bringing solutions to aviation
-					</H1>
+					<H2 marginBottom="3rem">
+						We bring customized and affordable solutions to Aviation Maintenance and Management.
+					</H2>
 					<div>
-						We are a team of professionals, including Aircraft Surveyors, Document Auditors, Aviation
-						Business Management specialist with extensive hands-on experience in Aviation.
+						We are a team of professional Aircraft Surveyors, Document Auditors
+						and Aviation Business Management specialist with extensive hands-on experience in General Aviation.
 					</div>
 					<Fieldset>
-						We provide flexible technical support ranging from physical inspections, document audits,
-						on-site representation, On time delivery is our goal.
+						We provide flexible technical support ranging from physical inspections,
+						document audits, on-site representation during heavy checks, modifications, Lease / End of Lease Project management.
+						Maintenance Planning and Logistic support.
+						On time and budget delivery is our goal.
 					</Fieldset>
 				</HeroBox>
 			</HeroWrapper>

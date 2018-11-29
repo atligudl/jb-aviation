@@ -10,9 +10,6 @@ const StyledHeader = styled('header')`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	position: fixed;
-	top: 0; left: 0;
-	right: 0;
 	height: ${props => (props.condensed ? props.theme.sizes.headerHeightCondensed : props.theme.sizes.headerHeight)};
 	padding: 1rem;
 	background-color: #fff;

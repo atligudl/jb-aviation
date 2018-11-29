@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'react-emotion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import theme from '../base/app/theme';
 import { H3 } from '../base';
 
 const StyledServiceList = styled('div')`
@@ -61,8 +60,7 @@ const ServiceList = ({ title, items, icon }) => {
 			</div>
 			<HeadingWrapper>
 				<H3 marginBottom="6rem">
-					JB Aviation has during the last 20 years physically inspected and audited the
-					following aircraft and engine types
+					{title}
 				</H3>
 			</HeadingWrapper>
 			<Items>

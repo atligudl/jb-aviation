@@ -19,7 +19,6 @@ const globalTheme = `
 	}
 
 	body {
-		padding-top: ${theme.sizes.headerHeight};
 		margin: 0;
 		font-size: ${theme.fonts.fontSize};
 		line-height: 1.6;
