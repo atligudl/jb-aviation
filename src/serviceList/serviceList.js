@@ -47,10 +47,14 @@ const Item = styled('div')`
 	line-height: 1.2;
 	border: 1px solid ${props => props.theme.colors.borderColor};
 
-	@media(min-width: 480px) { width: 50%; }
+	@media(min-width: 480px) {
+		width: 50%;
+
+		${({ fullWidth }) => fullWidth && `width: 100%` };
+	}
 `;
 
-const ServiceList = ({ title, items, icon }) => {
+const ServiceList = ({ title, items, icon, fullWidth }) => {
 	return (
 		<StyledServiceList>
 			<div>
@@ -67,7 +71,7 @@ const ServiceList = ({ title, items, icon }) => {
 				{
 					items.map((item, index) => {
 						return (
-							<Item key={index}>{item}</Item>
+							<Item fullWidth={fullWidth} key={index}>{item}</Item>
 						);
 					})
 				}

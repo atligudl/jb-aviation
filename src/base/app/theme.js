@@ -26,8 +26,8 @@ const theme = {
 	},
 	sizes: {
 		sidebarWidth: 64,
-		headerHeightCondensed: '6rem',
-		headerHeight: '7rem',
+		headerHeightCondensed: '8rem',
+		headerHeight: '10rem',
 		pageMaxWidth: '1430px',
 		containerBreakpoint: '1580px'
 	}

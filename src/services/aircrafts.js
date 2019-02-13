@@ -11,8 +11,12 @@ const aircrafts = [
 	'Boeing B747-300/-400 Freighter conversions',
 	'Boeing B747SP Vip conversion',
 	'Boeing B757-200/-300',
-	'Boeing B767-200/-300/-400',
-	'Boeing B777-200/-300'
+	'Boeing B767-200/-300/-400 Vip conversions',
+	'Boeing B777-200/-300',
+	'L1011 Vip conversion',
+	'MD 83',
+	'Fokker 100 Series',
+	'Fokker 50',
 ];
 
 export default aircrafts;

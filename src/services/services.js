@@ -1,22 +1,23 @@
 import React from 'react';
 import styled from 'react-emotion';
-import { faPlaneArrival, faCarBattery } from '@fortawesome/free-solid-svg-icons';
+import { faPlaneArrival, faCarBattery, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 
 import {
 	HeroWrapper,
 	Hero,
 	Container,
 	H2,
-	Ul, Li,
 	Section
 } from '../base';
 import image from '../assets/images/plane.jpeg';
 import ServiceList from '../serviceList/serviceList';
 import aircrafts from './aircrafts';
 import engines from './engines';
+import projects from './projects';
 
 const aircraftsTitle = 'JB Aviation has during the last 20 years physically inspected and audited the following aircrafts';
 const enginesTitle = 'JB Aviation has during the last 20 years physically inspected and audited the following engine types';
+const projectsTitle = 'Examples of projects that JA Aviation has been involved in';
 
 const StyledContent = styled('div')`
 	text-align: center;
@@ -73,6 +74,11 @@ const Services = () => {
 			<Section padding="0 0 12rem 0">
 				<Container>
 					<ServiceList title={enginesTitle} items={engines} icon={faCarBattery} />
+				</Container>
+			</Section>
+			<Section padding="0 0 12rem 0">
+				<Container>
+					<ServiceList fullWidth title={projectsTitle} items={projects} icon={faProjectDiagram} />
 				</Container>
 			</Section>
 		</div>
