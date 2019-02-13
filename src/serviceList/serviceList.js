@@ -65,9 +65,9 @@ const ServiceList = ({ title, items, icon }) => {
 			</HeadingWrapper>
 			<Items>
 				{
-					items.map((item) => {
+					items.map((item, index) => {
 						return (
-							<Item>{item}</Item>
+							<Item key={index}>{item}</Item>
 						);
 					})
 				}

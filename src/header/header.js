@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Flex } from '@rebass/grid/emotion';
 
 import { Anchor } from '../base';
-import logo from '../logo.svg';
+import logo from '../assets/images/image1.png';
 
 const StyledHeader = styled('header')`
 	display: flex;
@@ -24,14 +24,9 @@ const StyledHeader = styled('header')`
 `;
 
 const Logo = styled('div')`
-	width: 60px;
-`;
-
-const HeaderTitle = styled('div')`
-	font-family: ${props => props.theme.fonts.fontFamilyCondensed};
-	font-size: 1.8rem;
-	text-decoration: none;
-	color: ${props => props.theme.colors.textColor};
+	display: flex;
+	align-items: center;
+	width: 100px;
 `;
 
 const Navigation = styled('nav')`
@@ -76,7 +71,6 @@ class Header extends Component {
 						<Logo>
 							<img src={logo} alt="Page header" />
 						</Logo>
-						<HeaderTitle>JB Aviation</HeaderTitle>
 					</Flex>
 				</Link>
 				<Navigation>

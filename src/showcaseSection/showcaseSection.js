@@ -58,7 +58,13 @@ const ButtonWrapper = styled('div')`
 	margin-top: 3rem;
 `;
 
-const ShowcaseSection = ({ image, imageSide, url }) => {
+const ShowcaseSection = ({
+	title,
+	text,
+	image,
+	imageSide,
+	url
+}) => {
 	return (
 		<StyledShowcaseSection>
 			<Image image={image} side={imageSide} />
@@ -66,12 +72,9 @@ const ShowcaseSection = ({ image, imageSide, url }) => {
 				<Columns>
 					<Column width={breakpoints} order={imageSide === 'right' ? 1 : 2}>
 						<Content imageSide={imageSide}>
-							<H1 marginBottom="4.5rem">Aircraft maintenance & consulting</H1>
+							<H1 marginBottom="4.5rem">{title}</H1>
 							<Text>
-								We are a team of professionals, including Aircraft Surveyors, Document Auditors, Aviation
-								Business Management specialist with extensive hands-on experience in Aviation.
-								We provide flexible technical support ranging from physical inspections, document audits,
-								on-site representation, On time delivery is our goal.
+								{text}
 							</Text>
 							<ButtonWrapper>
 								<Link to={url}>

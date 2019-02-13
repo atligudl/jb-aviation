@@ -23,6 +23,7 @@ import ScrollableContainer from './containers/scrollableContainer';
 import { StripedTable, StripedTableItem } from './tables/stripedTable';
 import { HeroWrapper, Hero, HeroBox } from './hero/hero';
 import Section from './section/section';
+import { Ul, Li } from './type/lists';
 
 export {
 	HeroWrapper,
@@ -54,5 +55,7 @@ export {
 	ScrollableContainer,
 	StripedTable,
 	StripedTableItem,
-	Section
+	Section,
+	Ul,
+	Li
 };

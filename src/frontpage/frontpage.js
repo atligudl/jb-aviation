@@ -11,6 +11,7 @@ import image from '../assets/images/B777-cropped.jpeg';
 import ShowcaseSection from '../showcaseSection/showcaseSection';
 import engine from '../assets/images/engine.jpg';
 import tail from '../assets/images/tail.jpeg';
+import * as frontpageContent from './content';
 
 const Frontpage = () => {
 	return (
@@ -33,8 +34,19 @@ const Frontpage = () => {
 					</Fieldset>
 				</HeroBox>
 			</HeroWrapper>
-			<ShowcaseSection image={tail} imageSide="left" url="/services" />
-			<ShowcaseSection image={engine} imageSide="right" url="/about-us" />
+			<ShowcaseSection
+				title={frontpageContent.showcase1Title}
+				text={frontpageContent.showcase1Text}
+				image={tail}
+				imageSide="left"
+				url="/services"
+			/>
+			<ShowcaseSection
+				title={frontpageContent.showcase2Title}
+				text={frontpageContent.showcase2Text}
+				image={engine}
+				imageSide="right"
+				url="/about-us" />
 		</div>
 	);
 };
